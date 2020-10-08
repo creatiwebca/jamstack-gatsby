@@ -6,4 +6,4 @@ This is the [Creatiweb studio website](http://www.creatiweb.ca). It's built usin
 
 Web and mobile development providing professional services to small, medium and large businesses.
 
-[Check out our work!](https://wwww.creatiweb.ca)
+[Check out our work!](https://www.creatiweb.ca)

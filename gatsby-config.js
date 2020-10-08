@@ -25,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-theme-carbon',
       options: {
         navigationStyle: 'header', 
-        iconPath: './src/images/logo_cds.png',
+        iconPath: './src/images/logo-manifest.png',
         additionalFontWeights: ['200', '200i'],
         mdxExtensions: ['.mdx'],
         titleType: 'page',

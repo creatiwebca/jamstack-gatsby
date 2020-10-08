@@ -1,7 +1,7 @@
 {
-  "name": "example",
+  "name": "creatiweb-studio",
   "private": true,
-  "version": "1.26.4",
+  "version": "1.0.1",
   "license": "Apache 2.0",
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
@@ -11,9 +11,27 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
+  "browserslist": [
+    "last 1 edge version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 chrome version"
+  ],
+  "eslintIgnore": [
+    "/public/*",
+    "/.cache/*",
+    "/node_modules/*"
+  ],
+  "resolutions": {
+    "carbon-components": "^10.20.0",
+    "carbon-components-react": "^7.20.0",
+    "@carbon/elements": "^10.19.0"
+  },
   "dependencies": {
-    "gatsby": "^2.20.4",
-    "gatsby-theme-carbon": "^1.26.4",
+    "gatsby": "^2.20.14",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
+    "gatsby-plugin-sitemap": "^2.4.14",
+    "gatsby-theme-carbon": "^1.26.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

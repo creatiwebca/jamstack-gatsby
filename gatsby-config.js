@@ -1,32 +1,39 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,theme,carbon',
+    title: 'Web studio | digital solutions',
+    siteUrl: 'https://www.creatiweb.ca',
+    description: 
+      'CREATIWEB is a web studio who helps store owners increase their sales. We are specialized in developing Shopify ecommerce websites for clients all over the world.',
+    keywords: 
+      'developer,digital,solutions,ecommerce,shopify,partner,web,studio,design,cloud'
   },
-  pathPrefix: `/gtc`,
+  pathPrefix: `/cds`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Carbon Design Gatsby Theme',
-        short_name: 'Gatsby Theme Carbon',
+        name: 'CREATIWEB studio',
+        short_name: 'Creatiweb',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#0062ff',
         display: 'browser',
+        icon: `src/images/logo-manifest.png`,
       },
     },
     {
       resolve: 'gatsby-theme-carbon',
       options: {
-        mediumAccount: 'carbondesign',
-        repository: {
-          baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
+        navigationStyle: 'header', 
+        iconPath: './src/images/logo_cds.png',
+        additionalFontWeights: ['200', '200i'],
+        mdxExtensions: ['.mdx'],
+        titleType: 'page',
+        mediumAccount: '@creatiwebca',
       },
     },
+    'gatsby-plugin-netlify-cache',
+    `gatsby-plugin-sitemap`,
+
   ],
 };

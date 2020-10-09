@@ -5,8 +5,7 @@ import ToggleIcon from './ToggleIcon';
 import webm from './who-we-are.webm';
 import mp4 from './who-we-are.mp4';
 
-
-import poster from './poster.jpg';
+// import poster from './poster.jpg';
 
 const HomepageVideo = () => {
   const videoRef = useRef();
@@ -28,7 +27,7 @@ const HomepageVideo = () => {
   return (
     <div className="homepage-video--main">
       <div className="homepage-video--wrapper">
-        <video poster={poster} ref={videoRef} muted autoPlay playsInline loop>
+        <video ref={videoRef} muted autoPlay playsInline loop>
           <source src={webm} type="video/webm" />
           <source src={mp4} type="video/mp4" />
         </video>

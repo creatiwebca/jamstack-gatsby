@@ -1,1 +1,125 @@
 // This is where your application styles could go.
+@import 'homepage';
+@import 'mixins';
+@import 'fourOhfour';
+@import 'src/components/HomepageVideo/homepage-video.scss';
+
+
+:global(a:focus){
+  outline: 2px solid var(--cds-focus, $orange-40);
+}
+
+:global(.headerName-orange){
+  color: $orange-40;
+}
+
+:global(.container--dark a.#{$prefix}--link,
+.container--dark a.#{$prefix}--link:hover,
+.container--dark a.#{$prefix}--link:active,
+.container--dark a.#{$prefix}--link:active:visited,
+.container--dark a.#{$prefix}--link:active:visited:hover ){
+  border: none;
+  color: $orange-40;
+}
+
+:global(.container--dark a:focus){
+  outline-color: $orange-40;
+}
+
+:global(.bx--btn--primary){
+  background: $orange-40; 
+  &:hover{
+    background: $orange-40;
+  }
+}
+
+:global(.bx--text-input), :global(.bx--text-area), :global(.bx--select-input){
+  &:focus{
+    outline: 2px solid var(--cds-focus, $orange-40);
+    outline-offset: -2px;
+  }
+  &:active{
+    outline: 2px solid var(--cds-focus, $orange-40);
+    outline-offset: -2px;
+  }
+}
+
+:global(.bx--accordion__heading){
+  &:focus{
+    &:before{
+      box-sizing: border-box;
+      border: 2px solid var(--cds-focus, $orange-40);
+    }    
+  }  
+}
+
+.container .#{$prefix}--grid {
+  margin: 0;
+
+  @include carbon--breakpoint('lg') {
+    padding-left: calc(
+      5% + 2rem
+    ); //2rem to account for 2rem left padding default on grid
+    padding-right: 2rem;
+  }
+}
+
+div [class*='Video-module--video-button']{
+  background-color: $orange-40;
+  &:hover{
+      background-color: $orange-40;
+  }
+  &:focus{
+      outline: 2px solid $orange-40;    
+  }
+}
+
+[class*='Link-module--link']{
+  color: $orange-40 !important;
+  &:hover{
+      color: $orange-40;
+  }
+  &:focus{
+      outline: 2px solid $orange-40;    
+  }
+}
+
+[class*='AutolinkHeader-module--anchor']{
+  svg{
+    fill: $orange-40;
+  }
+  &:focus{
+    outline: 2px solid $orange-40;
+  }
+}
+
+[class*='BackToTopBtn-module--button']{  
+  &:focus{
+    outline: 2px solid $orange-40;
+    border: 2px solid $orange-40;
+  }
+  svg{
+    fill: $orange-40;
+  }
+}
+
+[class*='PageTabs-module--selected-item']{  
+  [class*='PageTabs-module--link']{
+      border-top: 3px solid $orange-40 !important;
+  }
+}
+
+//ArticleCards
+.#{$prefix}--tile--clickable,
+  .#{$prefix}--tile--expandable {
+    &:focus {
+      @include focus-outline('outline');
+    }
+
+    &:hover,
+    &:focus {
+      .#{$prefix}--tile__checkmark {
+        opacity: 1;
+      }
+    }
+  }

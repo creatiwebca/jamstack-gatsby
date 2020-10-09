@@ -1,50 +1,53 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import { HomepageCallout, ResourceCard } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import { calloutLink } from './Homepage.module.scss';
+import styles from './Homepage.module.scss';
+import HomepageVideo from '../../components/HomepageVideo/';
+import laptopMobile from '../../images/laptop-mobile.jpg';
 
-import Carbon from '../../images/carbon.jpg';
-
-const FirstLeftText = () => <p>Callout component</p>;
-
+const FirstLeftText = () => <p>Think digital</p>;
 const FirstRightText = () => (
   <p>
-    This is a callout component. You can edit the contents by updating the{' '}
-    <a href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/5fe12de31bb19fbfa2cab7c69cd942f55aa06f79/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      pre-shadowed homepage template
-    </a>
-    . You can also provide <code>color</code> and <code>backgroundColor</code>{' '}
-    props to suit your theme.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/master/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
-  </p>
+    Get your Shopify store up and running, with options ranging from basic theme setup 
+    to completely custom solutions for your existing business or business idea.
+   
+  </p>    
 );
 
-const SecondLeftText = () => <p>Callout component</p>;
-
+const SecondLeftText = () => <p>You want to work with us?</p>;
 const SecondRightText = () => (
-  <p>
-    You can also not use these components at all by not providing the callout
-    props to the template or writing your own template.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/master/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+  <p>Because we believe each project is unique, you deserve our best attention. 
+    We hope to hear from you, your projects and your ideas. 
+    <a className={styles.calloutLink} href="/start-a-project">Start a project →</a>
   </p>
 );
 
-const BannerText = () => <h1>Carbon Gatsby theme</h1>;
-
+//const BannerText = () => <h1>Your growth partner</h1>;
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
+  Banner: (
+    <>
+    <span className="homepage--dots" />
+      <section className="homepage--header">
+        <div className="bx--grid">
+          <div className="bx--row">
+            <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-2 bx--offset-lg-8 bx--offset-md-4 bx--offset-sm-2 homepage--tile-header">
+              <ResourceCard
+                className={styles.callToAction}
+                title="Our work"
+                href="/our-work"
+                color="dark"
+                actionIcon="arrowRight"
+              />
+            </div>
+            <HomepageVideo />
+          </div>
+        </div>
+      </section>
+    </>
+  ),
   FirstCallout: (
     <HomepageCallout
-      backgroundColor="#030303"
-      color="white"
+      className={styles.firstCallout}
       leftText={FirstLeftText}
       rightText={FirstRightText}
     />
@@ -53,8 +56,7 @@ const customProps = {
     <HomepageCallout
       leftText={SecondLeftText}
       rightText={SecondRightText}
-      color="white"
-      backgroundColor="#061f80"
+      className={styles.secondCallout}
     />
   ),
 };

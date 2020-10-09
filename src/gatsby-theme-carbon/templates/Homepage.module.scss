@@ -1,6 +1,23 @@
 .callout-link {
-  @include carbon--type-style('body-long-02');
+  @include carbon--type-style('body-long-01');
   display: table-cell; // like display block, but the width fits to content rather than 100%
   position: relative;
   top: $spacing-06; //margin-top doesn't work on table-cell, and padding-top looks weird on focus
 }
+
+a{color: $carbon--purple-100}
+
+.first-callout{
+  color: $orange-40;
+  background-color: $carbon--black-100;
+  position: relative;
+  z-index: 2;
+}
+
+.second-callout{
+  color: $carbon--purple-100;
+  background-color: $orange-40;
+  position: relative;
+  z-index: 2;  
+}
+

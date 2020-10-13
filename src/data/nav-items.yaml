@@ -1,6 +1,6 @@
-- title: Our story
+- title: About us
   pages:
-    - path: /our-story
+    - path: /about
 - title: Services
   pages:   
     - title: Shopify packages  

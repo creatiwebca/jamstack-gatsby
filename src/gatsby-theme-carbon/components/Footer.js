@@ -15,7 +15,7 @@ const Content = ({ buildTime }) => (
       who helps store owners increase their sales. 
     </p>
     <p>
-      <a href="/our-story">
+      <a href="/about">
         More about us
       </a>
     </p>

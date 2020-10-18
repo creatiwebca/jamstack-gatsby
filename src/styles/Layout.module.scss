@@ -54,14 +54,14 @@
     justify-content: space-between;
     height: 32px;
     padding-left: $spacing-05;
-    color: $text-04;
-    background: $carbon--purple-80;
+    color: $text-02;
+    background: $carbon--yellow-30;
   }
   
   .banner-close,
   .banner-close:hover {
-    background: $carbon--purple-80 !important;
-    color: $text-04;
+    background: $carbon--yellow-30 !important;
+    color: $text-02;
   }
   
   .full-name {
@@ -75,7 +75,7 @@
   }
   
   .banner a {
-    color: $text-04;
+    color: $text-02;
     @include carbon--type-style('body-short-01');
   }
   

@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: process.env.GATSBY_GOOGLE_TAGMANAGER_ID,
+        id: process.env.GATSBY_GOOGLE_TAGMANAGER_ID || "none",
   
         // Include GTM in development.
         //
@@ -58,16 +58,16 @@ module.exports = {
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-        routeChangeEventName: process.env.GATSBY_ROUTE_CHANGE,
+        routeChangeEventName: process.env.GATSBY_ROUTE_CHANGE || "none",
       }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID || "none",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
@@ -77,9 +77,9 @@ module.exports = {
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         // Enables Google Optimize using your container Id
-        optimizeId: process.env.GATSBY_GOOGLE_OPTIMIZE_TRACKING_ID,
+        optimizeId: process.env.GATSBY_GOOGLE_OPTIMIZE_TRACKING_ID || "none",
         // Enables Google Optimize Experiment ID
-        experimentId: process.env.GATSBY_GOOGLE_EXPERIMENT_ID,
+        experimentId: process.env.GATSBY_GOOGLE_EXPERIMENT_ID || "none",
         defer: false,
         // Any additional optional fields
         sampleRate: 5,

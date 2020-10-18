@@ -68,7 +68,7 @@ const Layout = ({
       {isBannerVisible ? (
         <div className={banner} role="contentinfo">
           <span>
-          Now more than ever your business needs to be online.<span className={fullName}> | We are open during this COVID-19 pandemic!</span>&nbsp;
+          Now more than ever your business needs to be online.<span className={fullName}> We are open during this COVID-19 pandemic!</span>&nbsp;
             <a onClick={handleBannerClose} href="/services/expert-guidance">More info..</a>
           </span>
           <Button

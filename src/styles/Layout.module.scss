@@ -55,13 +55,13 @@
     height: 32px;
     padding-left: $spacing-05;
     color: $text-04;
-    background: $carbon--purple-90;
+    background: $carbon--purple-80;
   }
   
   .banner-close,
   .banner-close:hover {
-    background: $carbon--purple-90 !important;
-
+    background: $carbon--purple-80 !important;
+    color: $text-04;
   }
   
   .full-name {

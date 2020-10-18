@@ -122,3 +122,11 @@ div [class*='Video-module--video-button']{
       }
     }
   }
+
+[class*='PageHeader-module--page-header']{
+  background: url(../images/shopify-partner.png) no-repeat !important;
+  background-position: 80% 20% !important;
+  background-color: $carbon--purple-70 !important;
+  color: $text-04 !important;
+
+}

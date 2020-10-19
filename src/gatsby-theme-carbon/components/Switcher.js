@@ -3,8 +3,8 @@ import Switcher, {SwitcherLink } from 'gatsby-theme-carbon/src/components/Switch
 
 const NewChildren = () => (
     <>
-      <SwitcherLink href="https://www.linkedin.com/company/creatiweb-digital-solutions" target="_blank">Linkedin company page</SwitcherLink>   
-      <SwitcherLink href="https://github.com/creatiwebca" target="_blank">GitHub profile</SwitcherLink>  
+      <SwitcherLink href="https://www.linkedin.com/company/creatiweb-digital-solutions" target="_blank">Linkedin</SwitcherLink>   
+      <SwitcherLink href="https://github.com/creatiwebca" target="_blank">GitHub</SwitcherLink>  
     </>
   );
 

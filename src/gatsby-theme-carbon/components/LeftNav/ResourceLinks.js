@@ -4,15 +4,15 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Github',
-    href: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
+    href: 'https://github.com/creatiwebca',
   },
   {
-    title: 'Carbon',
-    href: 'https://www.carbondesignsystem.com',
+    title: 'Linkedin',
+    href: 'https://www.linkedin.com/company/creatiweb-digital-solutions',
   },
   {
-    title: 'Configuration guide',
-    href: '/guides/configuration',
+    title: 'Publications',
+    href: '/publications',
   },
 ];
 

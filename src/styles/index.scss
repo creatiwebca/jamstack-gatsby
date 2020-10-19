@@ -124,9 +124,19 @@ div [class*='Video-module--video-button']{
   }
 
 [class*='PageHeader-module--page-header']{
-  background: url(../images/shopify-partner.png) no-repeat !important;
-  background-position: 80% 20% !important;
+  background: url(../images/shopify-partner.png) no-repeat !important;  
   background-color: $carbon--purple-70 !important;
   color: $text-04 !important;
+
+  @include carbon--breakpoint('md') {
+    background-size: 50% !important; 
+    background-position: 90% 10% !important;
+  }
+
+  @include carbon--breakpoint('sm') {
+    background-size: 70% !important; 
+    background-position: 100% 60% !important;
+
+  }
 
 }

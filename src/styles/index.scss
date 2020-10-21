@@ -136,8 +136,8 @@ div [class*='Video-module--video-button']{
   color: $text-04 !important;
 
   @include carbon--breakpoint('md') {
-    background-size: 50% !important; 
-    background-position: 90% 20% !important;
+    background-size: 28% !important; 
+    background-position: 80% 20% !important;
   }
 
   @include carbon--breakpoint('sm') {

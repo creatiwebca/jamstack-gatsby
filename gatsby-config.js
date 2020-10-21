@@ -10,6 +10,36 @@ module.exports = {
   pathPrefix: `/cds`,
   plugins: [
     {
+      resolve: 'gatsby-plugin-google-marketing-platform',
+      options: {
+        dataLayer: {
+          // Preset dataLayer values
+          gaPropertyId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID || "none",
+        },
+        tagmanager: {
+          id: process.env.GATSBY_GOOGLE_TAGMANAGER_ID || "none",
+          params: {
+            // GTM URL Parameters
+            // Ex: https://www.googletagmanager.com/gtm.js?id=[ID]&gtm_cookies_win=x
+            gtm_cookies_win: 'x',
+            // Include GTM in development.            
+    
+            // Name of the event that is triggered
+            // on every Gatsby route change.
+            //
+            // Defaults to gatsby-route-change
+            routeChangeEventName: process.env.GATSBY_ROUTE_CHANGE || "none",
+          }
+        },
+        analytics: {
+          id: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID || "none",
+        },
+        optimize: {
+          id: '[Google Optimize ID]',
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'CREATIWEB studio',
@@ -34,6 +64,7 @@ module.exports = {
     },
     'gatsby-plugin-netlify-cache',
     `gatsby-plugin-sitemap`,
+    
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {

@@ -54,7 +54,7 @@ const buttonEvents = {
 const FormGetinTouch = () => (
   <Row>
     <Column colLg={4}>
-      <Form name="Getintouch" netlify>
+      <Form name="Getintouch" method="post" data-netlify="true" action="/thanks-form">
         <FormGroup>
           <TextInput {...TextInputFirstNameProps} />
         </FormGroup>

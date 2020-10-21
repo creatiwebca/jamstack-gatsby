@@ -3,9 +3,16 @@
 @import 'mixins';
 @import 'src/components/HomepageVideo/homepage-video.scss';
 
+:global(.bx--feature-card__link){
+  &:focus{
+    outline: 2px solid var(--cds-focus, $orange-40) !important;
+  }  
+}
 
-:global(a:focus){
-  outline: 2px solid var(--cds-focus, $orange-40);
+:global(a){
+  &:focus{
+    outline: 2px solid var(--cds-focus, $orange-40) !important;
+  }  
 }
 
 :global(.headerName-orange){
@@ -130,7 +137,7 @@ div [class*='Video-module--video-button']{
 
   @include carbon--breakpoint('md') {
     background-size: 50% !important; 
-    background-position: 90% 10% !important;
+    background-position: 90% 20% !important;
   }
 
   @include carbon--breakpoint('sm') {
@@ -139,4 +146,8 @@ div [class*='Video-module--video-button']{
 
   }
 
+}
+
+:global(.gatsby-resp-image-wrapper){
+  max-width: 1424px !important;
 }

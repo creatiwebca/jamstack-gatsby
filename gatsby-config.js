@@ -36,7 +36,9 @@ module.exports = {
         },
         optimize: {
           id: process.env.GATSBY_GOOGLE_OPTIMIZE_TRACKING_ID || "none",
-        }
+          activateOn: true,
+        },
+        includeInDevelopment: true,
       }
     },
     {

@@ -51,10 +51,10 @@ const buttonEvents = {
   className: 'some-class',
 };
 
-const FormGetinTouch = () => (
+const FormGetinTouch = (props) => (
   <Row>
     <Column colLg={4}>
-      <Form name="Getintouch" method="post" data-netlify="true" action="/thanks-form">
+      <Form {...props}>
         <FormGroup>
           <TextInput {...TextInputFirstNameProps} />
         </FormGroup>

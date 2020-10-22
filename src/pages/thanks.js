@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../Layout'
+import Layout from 'gatsby-theme-carbon/src/components/Layout'
 
 export default () => (
   <Layout>

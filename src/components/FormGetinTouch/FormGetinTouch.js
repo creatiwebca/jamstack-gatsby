@@ -63,7 +63,7 @@ const FormGetinTouch = (props) => (
     <Column colLg={4}>
       <Form {...props}>
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value={props.name} />
         <FormGroup>
           <TextInput {...TextInputFirstNameProps} />
         </FormGroup>

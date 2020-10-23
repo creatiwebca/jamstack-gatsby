@@ -20,6 +20,8 @@ const additionalProps = {
 const TextInputFirstNameProps = {
   className: {mbItems},
   id: 'firstNameInput',
+  type: 'text',
+  name: 'firstNameInput',
   labelText: 'First name',
   placeholder: 'Enter your first name',
 };
@@ -27,6 +29,8 @@ const TextInputFirstNameProps = {
 const TextInputLastNameProps = {
   className: {mbItems},
   id: 'lastNameInput',
+  type: 'text',
+  name: 'lastNameInput',
   labelText: 'Last name',
   placeholder: 'Enter your last name',
 };
@@ -34,6 +38,8 @@ const TextInputLastNameProps = {
 const TextInputEmailProps = {
   className: {mbItems},
   id: 'emailInput',
+  type: 'email',
+  name: 'emailInput',
   labelText: 'Email',
   placeholder: 'Enter your email',
 };
@@ -43,6 +49,7 @@ const textareaMessageProps = {
   labelText: 'What are you looking to acomplish?',
   placeholder: 'Enter message',
   id: 'messageTextarea',
+  name: 'messageTextarea',
   cols: 50,
   rows: 4,
 };

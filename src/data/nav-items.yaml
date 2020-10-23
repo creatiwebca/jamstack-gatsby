@@ -6,13 +6,13 @@
     - title: Shopify packages  
       path: /services/shopify-packages
     - title: Store setup
-      path: /services/store-setup
+      path: /services/shopify-packages
     - title: Development
-      path: /services/development
+      path: /services/shopify-packages
     - title: Marketing and sales
-      path: /services/marketing-and-sales
+      path: /services/shopify-packages
     - title: Expert guidance
-      path: /services/expert-guidance
+      path: /services/shopify-packages
 - title: Our work
   pages:
     - path: /our-work

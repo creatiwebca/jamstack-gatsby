@@ -1,9 +1,41 @@
-import React from 'react'
-import Layout from 'gatsby-theme-carbon/src/components/Layout'
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from 'gatsby-theme-carbon/src/components/Layout';
+import {
+  container,
+  thanks,
+  paragraph,
+  heading,
+  link,
+  list,
+} from '../styles/thanks.scss';
 
-export default () => (
-  <Layout>
-    <h1>Thank you!</h1>
-    <p>This is a custom thank you page for form submissions</p>
+const Thanks = () => (
+  <Layout homepage>
+    <div className={container}></div>
+    <h2 className={heading}>Thank you for getting in touch!</h2>
+    <p className={paragraph}>
+        We’re thrilled to hear from you. Our inbox can’t wait to get your messages, so talk to us any time you like.
+    </p>
+    
+    <span className={thanks}>Cheers!</span>
   </Layout>
-)
+);
+
+export default Thanks;
+
+//         {links && ' Maybe some of these most visited links will help you?'}
+
+// {links && (
+//   <ul className={list}>
+//     {links.map(({ href, text }, i) => (
+//       <li key={i}>
+//         <Link className={link} to={href}>
+//           {text}
+//         </Link>
+//       </li>
+//     ))}
+//   </ul>
+// )}
+
+

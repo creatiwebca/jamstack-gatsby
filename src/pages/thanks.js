@@ -8,17 +8,19 @@ import {
   heading,
   link,
   list,
-} from '../styles/thanks.scss';
+} from '../styles/Thanks.module.scss';
 
 const Thanks = () => (
   <Layout homepage>
-    <div className={container}></div>
+    <div className={container}>
     <h2 className={heading}>Thank you for getting in touch!</h2>
     <p className={paragraph}>
         We’re thrilled to hear from you. Our inbox can’t wait to get your messages, so talk to us any time you like.
     </p>
     
     <span className={thanks}>Cheers!</span>
+
+    </div>
   </Layout>
 );
 

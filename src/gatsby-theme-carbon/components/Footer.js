@@ -24,9 +24,9 @@ const Content = ({ buildTime }) => (
 
 const links = {
   firstCol: [
-    { href: '/services/development', linkText: 'Development and Troubleshooting' },
-    { href: '/services/expert-guidance', linkText: 'Expert Guidance' },
-    { href: '/services/store-setup', linkText: 'Store Setup' },
+    { href: '/services/shopify-packages', linkText: 'Development and Troubleshooting' },
+    { href: '/services/shopify-packages', linkText: 'Expert Guidance' },
+    { href: '/services/shopify-packages', linkText: 'Store Setup' },
   ],
   secondCol: [
     { href: '/start-a-project', linkText: 'Get in Touch' },

@@ -1,6 +1,6 @@
 # CREATIWEB digital solutions studio
 
-This is the [Creatiweb studio website](http://www.creatiweb.ca). It's built using the [gatsby-theme-carbon](https://gatsby-theme-carbon.now.sh/) with [GatsbyJS](https://www.gatsbyjs.org/).
+This is the [Creatiweb studio website app](http://www.creatiweb.ca). It's built using [ReactJS](https://github.com/facebook/react) and  [GatsbyJS](https://github.com/gatsbyjs/gatsby).
 
 ## What do we do?
 

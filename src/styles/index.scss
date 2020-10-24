@@ -151,3 +151,9 @@ div [class*='Video-module--video-button']{
 :global(.gatsby-resp-image-wrapper){
   max-width: 1424px !important;
 }
+
+[class*='FourOhFour-module--heading']{  
+  @include carbon--type-style('expressive-heading-04', true);
+    margin-bottom: $spacing-06;
+    padding-top: 5rem;
+}
